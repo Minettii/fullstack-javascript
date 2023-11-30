@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Inputs</title>
+  </head>
+  <body>
+    <div>
+      <a href="/">Home</a> | <a href="/about-me/">About me</a> |
+      <a href="/fundamentals/">HTML Fundamentals</a> |
+      <a href="/exercises/">Exercises</a>
+    </div>
+    <hr />
+    <h1>Inputs do HTML</h1>
+
+    <form>
+      <!-- Text field -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+
+      <!-- E-Mail field -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Password field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!-- Number field -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" />
+      <br /><br />
+
+      <!-- Selection field using radio button -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <!-- Multiple selection field using checkbox -->
+      <label>Interests:</label>
+      <input type="checkbox" id="backend" name="interesses" value="backend" />
+      <label for="backend">Back-end</label>
+      <input type="checkbox" id="frontend" name="interesses" value="frontend" />
+      <label for="frontend">Front-end</label>
+      <input type="checkbox" id="mobile" name="interesses" value="mobile" />
+      <label for="mobile">Mobile</label>
+      <br /><br />
+
+      <!-- Date field -->
+      <label for="birthDate">Birth date:</label>
+      <input type="date" id="birthDate" name="birth" />
+      <br /><br />
+
+      <!-- File field (file upload) -->
+      <label for="profilePicture">Profile picture:</label>
+      <input type="file" id="profilePicture" name="pfp" />
+      <br /><br />
+
+      <!-- Selection box field -->
+      <label for="situacion">Actual situation:</label>
+      <select name="situacion" id="situacion">
+        <option value="" selected disabled>Select one of the options...</option>
+        <option value="student">Studying to become a programmer</option>
+        <option value="intern">Acting as an intern/trainee</option>
+        <option value="junior">Acting as a junior developer</option>
+        <option value="mid-level">Acting as a mid-level developer</option>
+        <option value="senior">Acting as a senior developer</option>
+      </select>
+      <br /><br />
+
+      <!-- Multiple lines text area -->
+      <label for="about">About me:</label>
+      <textarea
+        name="about"
+        id="about"
+        cols="40"
+        rows="6"
+        placeholder="Tell me a little about you..."
+      ></textarea>
+      <br /><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

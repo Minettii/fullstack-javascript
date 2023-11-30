@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5 - Sign up form</title>
+  </head>
+  <body>
+    <div>
+      <a href="/">Home</a> | <a href="/about-me/">About me</a> |
+      <a href="/fundamentals/">HTML Fundamentals</a> |
+      <a href="/exercises/">Exercises</a>
+    </div>
+    <hr />
+  </body>
+  <h1>Sign up</h1>
+  <form>
+    <div>
+      <label for="name">Name:</label><br />
+      <input type="text" name="n" id="name" required placeholder="Will Smith" />
+    </div>
+    <br />
+    <div>
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        name="e"
+        id="email"
+        required
+        placeholder="willsmith@gmail.com"
+      />
+    </div>
+    <br />
+    <div>
+      <label for="phone">WhatsApp:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="p"
+        required
+        placeholder="00987654321"
+      />
+    </div>
+    <br />
+    <div>
+      <label>Occupation:</label>
+      <input type="radio" name="f" id="dev" name="dev" required />
+      <label for="dev">Development</label>
+      <input type="radio" name="f" id="qa" name="qa" required />
+      <label for="qa">Quality Assurance (QA)</label>
+      <input type="radio" name="f" id="da" name="da" required />
+      <label for="da">Data Analysis</label>
+      <input type="radio" name="f" id="inf" name="inf" required />
+      <label for="inf">Infrastructure</label>
+    </div>
+    <br />
+    <div>
+      <label for="remarks">Remarks:</label><br />
+      <textarea
+        name="r"
+        id="remarks"
+        cols="25"
+        rows="3"
+        placeholder="..."
+      ></textarea>
+    </div>
+    <br />
+    <div>
+      <input type="checkbox" name="news" id="news" />
+      <label for="news"
+        >I would like to receive news and offers in my email.</label
+      >
+    </div>
+    <button type="submit">Sign Up</button>
+  </form>
+</html>
